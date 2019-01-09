@@ -1,4 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-new-account',
@@ -13,7 +14,9 @@ export class NewAccountComponent implements OnInit {
       name: accountName,
       status: accountStatus
     });
-    console.log('A server status changed, new status: ' +accountStatus);
+    // const service = new LoggingService();
+    // service.logStatusChange(accountStatus);
+    // console.log('A server status changed, new status: ' +accountStatus);
   }
 
   constructor() { }
