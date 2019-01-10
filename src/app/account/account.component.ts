@@ -7,7 +7,7 @@ import {AccountsService} from '../accounts.service';
   selector: 'app-account',
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.scss'],
-  providers: [LoggingService, AccountsService]
+  providers: [LoggingService]
 })
 export class AccountComponent implements OnInit {
   @Input() account: {name: string, status: string};
@@ -23,7 +23,6 @@ export class AccountComponent implements OnInit {
   }
 
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
